@@ -21,6 +21,11 @@
 		0BA04690181C79BC004B2827 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BA04672181C79BC004B2827 /* UIKit.framework */; };
 		0BA04698181C79BC004B2827 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0BA04696181C79BC004B2827 /* InfoPlist.strings */; };
 		0BA0469A181C79BC004B2827 /* BasicCalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BA04699181C79BC004B2827 /* BasicCalculatorTests.m */; };
+		0BA046A5181C9FF4004B2827 /* LZSum.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BA046A4181C9FF4004B2827 /* LZSum.m */; };
+		0BA046A8181CA018004B2827 /* LZSubtraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BA046A7181CA018004B2827 /* LZSubtraction.m */; };
+		0BA046AB181CA028004B2827 /* LZMultiplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BA046AA181CA028004B2827 /* LZMultiplication.m */; };
+		0BA046AE181CA033004B2827 /* LZDivision.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BA046AD181CA033004B2827 /* LZDivision.m */; };
+		0BA046B6181CABAA004B2827 /* NSObject+Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BA046B5181CABAA004B2827 /* NSObject+Singleton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,17 @@
 		0BA04695181C79BC004B2827 /* BasicCalculatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BasicCalculatorTests-Info.plist"; sourceTree = "<group>"; };
 		0BA04697181C79BC004B2827 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0BA04699181C79BC004B2827 /* BasicCalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasicCalculatorTests.m; sourceTree = "<group>"; };
+		0BA046A3181C9FF4004B2827 /* LZSum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LZSum.h; path = Operators/LZSum.h; sourceTree = "<group>"; };
+		0BA046A4181C9FF4004B2827 /* LZSum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LZSum.m; path = Operators/LZSum.m; sourceTree = "<group>"; };
+		0BA046A6181CA018004B2827 /* LZSubtraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LZSubtraction.h; path = Operators/LZSubtraction.h; sourceTree = "<group>"; };
+		0BA046A7181CA018004B2827 /* LZSubtraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LZSubtraction.m; path = Operators/LZSubtraction.m; sourceTree = "<group>"; };
+		0BA046A9181CA028004B2827 /* LZMultiplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LZMultiplication.h; path = Operators/LZMultiplication.h; sourceTree = "<group>"; };
+		0BA046AA181CA028004B2827 /* LZMultiplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LZMultiplication.m; path = Operators/LZMultiplication.m; sourceTree = "<group>"; };
+		0BA046AC181CA033004B2827 /* LZDivision.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LZDivision.h; path = Operators/LZDivision.h; sourceTree = "<group>"; };
+		0BA046AD181CA033004B2827 /* LZDivision.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LZDivision.m; path = Operators/LZDivision.m; sourceTree = "<group>"; };
+		0BA046B0181CA8EB004B2827 /* LZOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LZOperation.h; path = Operators/LZOperation.h; sourceTree = "<group>"; };
+		0BA046B4181CABAA004B2827 /* NSObject+Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+Singleton.h"; path = "Operators/NSObject+Singleton.h"; sourceTree = "<group>"; };
+		0BA046B5181CABAA004B2827 /* NSObject+Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+Singleton.m"; path = "Operators/NSObject+Singleton.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +133,7 @@
 				0BA04680181C79BC004B2827 /* Main.storyboard */,
 				0BA04683181C79BC004B2827 /* LZViewController.h */,
 				0BA04684181C79BC004B2827 /* LZViewController.m */,
+				0BA046AF181CA03C004B2827 /* Operators */,
 				0BA04686181C79BC004B2827 /* Images.xcassets */,
 				0BA04675181C79BC004B2827 /* Supporting Files */,
 			);
@@ -150,6 +167,24 @@
 				0BA04696181C79BC004B2827 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0BA046AF181CA03C004B2827 /* Operators */ = {
+			isa = PBXGroup;
+			children = (
+				0BA046B4181CABAA004B2827 /* NSObject+Singleton.h */,
+				0BA046B5181CABAA004B2827 /* NSObject+Singleton.m */,
+				0BA046B0181CA8EB004B2827 /* LZOperation.h */,
+				0BA046A3181C9FF4004B2827 /* LZSum.h */,
+				0BA046A4181C9FF4004B2827 /* LZSum.m */,
+				0BA046A6181CA018004B2827 /* LZSubtraction.h */,
+				0BA046A7181CA018004B2827 /* LZSubtraction.m */,
+				0BA046A9181CA028004B2827 /* LZMultiplication.h */,
+				0BA046AA181CA028004B2827 /* LZMultiplication.m */,
+				0BA046AC181CA033004B2827 /* LZDivision.h */,
+				0BA046AD181CA033004B2827 /* LZDivision.m */,
+			);
+			name = Operators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +286,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BA0467F181C79BC004B2827 /* LZAppDelegate.m in Sources */,
+				0BA046AB181CA028004B2827 /* LZMultiplication.m in Sources */,
+				0BA046A8181CA018004B2827 /* LZSubtraction.m in Sources */,
+				0BA046A5181C9FF4004B2827 /* LZSum.m in Sources */,
+				0BA046AE181CA033004B2827 /* LZDivision.m in Sources */,
+				0BA046B6181CABAA004B2827 /* NSObject+Singleton.m in Sources */,
 				0BA04685181C79BC004B2827 /* LZViewController.m in Sources */,
 				0BA0467B181C79BC004B2827 /* main.m in Sources */,
 			);

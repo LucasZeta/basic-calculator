@@ -46,8 +46,13 @@
 
 - (void)updateResultScreen
 {
+    [self updateResultScreen:numberTapped];
+}
+
+- (void)updateResultScreen:(double)number
+{
     int precision = (decimalPlaces > 0) ? decimalPlaces - 1 : 0;
-    resultScreen.text = [NSString stringWithFormat:@"%.*f", precision, numberTapped];
+    resultScreen.text = [NSString stringWithFormat:@"%.*f", precision, number];
 }
 
 - (void)insertNumberAtIntegerPart:(int)number
@@ -60,6 +65,43 @@
 {
     numberTapped += number / pow(10.0f, decimalPlaces);
     decimalPlaces++;
+}
+
+- (IBAction)divide:(id)sender
+{
+    [self calculate];
+    operation = [LZDivision sharedInstance];
+}
+
+- (IBAction)multiplicate:(id)sender
+{
+    [self calculate];
+    operation = [LZMultiplication sharedInstance];
+}
+
+- (IBAction)subtract:(id)sender
+{
+    [self calculate];
+    operation = [LZSubtraction sharedInstance];
+}
+
+- (IBAction)sum:(id)sender
+{
+    [self calculate];
+    operation = [LZSum sharedInstance];
+}
+
+- (void)calculate
+{
+    if (operation) {
+        total = [operation doTheMathWith:total and:numberTapped];
+
+        [self updateResultScreen:total];
+    } else {
+        total = numberTapped;
+    }
+
+    numberTapped = 0;
 }
 
 - (void)viewDidLoad

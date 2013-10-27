@@ -19,5 +19,6 @@
 
 - (IBAction)tapNumber:(id)sender;
 - (IBAction)tapDecimalSeparator:(id)sender;
+- (IBAction)clearScreen:(id)sender;
 
 @end

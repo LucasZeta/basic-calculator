@@ -25,7 +25,7 @@
         [self insertNumberAtIntegerPart:intValue];
     }
 
-    [self putButtonNumberOnScreen];
+    [self updateResultScreen];
 }
 
 - (IBAction)tapDecimalSeparator:(id)sender
@@ -35,7 +35,16 @@
     }
 }
 
-- (void)putButtonNumberOnScreen
+- (IBAction)clearScreen:(id)sender
+{
+    decimalPlaces = 0;
+    numberTapped = 0;
+    total = 0;
+
+    [self updateResultScreen];
+}
+
+- (void)updateResultScreen
 {
     int precision = (decimalPlaces > 0) ? decimalPlaces - 1 : 0;
     resultScreen.text = [NSString stringWithFormat:@"%.*f", precision, numberTapped];

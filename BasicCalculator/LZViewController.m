@@ -35,11 +35,13 @@
     }
 }
 
-- (IBAction)clearScreen:(id)sender
+- (IBAction)clearCalculator:(id)sender
 {
     decimalPlaces = 0;
     numberTapped = 0;
     total = 0;
+
+    operation = nil;
 
     [self updateResultScreen];
 }
@@ -70,25 +72,25 @@
 - (IBAction)divide:(id)sender
 {
     [self calculate];
-    operation = [LZDivision sharedInstance];
+    operation = [[LZDivision alloc] init];
 }
 
 - (IBAction)multiplicate:(id)sender
 {
     [self calculate];
-    operation = [LZMultiplication sharedInstance];
+    operation = [[LZMultiplication alloc] init];
 }
 
 - (IBAction)subtract:(id)sender
 {
     [self calculate];
-    operation = [LZSubtraction sharedInstance];
+    operation = [[LZSubtraction alloc] init];
 }
 
 - (IBAction)sum:(id)sender
 {
     [self calculate];
-    operation = [LZSum sharedInstance];
+    operation = [[LZSum alloc] init];
 }
 
 - (void)calculate

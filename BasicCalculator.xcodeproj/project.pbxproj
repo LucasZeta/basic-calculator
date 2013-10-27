@@ -25,7 +25,6 @@
 		0BA046A8181CA018004B2827 /* LZSubtraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BA046A7181CA018004B2827 /* LZSubtraction.m */; };
 		0BA046AB181CA028004B2827 /* LZMultiplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BA046AA181CA028004B2827 /* LZMultiplication.m */; };
 		0BA046AE181CA033004B2827 /* LZDivision.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BA046AD181CA033004B2827 /* LZDivision.m */; };
-		0BA046B6181CABAA004B2827 /* NSObject+Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BA046B5181CABAA004B2827 /* NSObject+Singleton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,8 +66,6 @@
 		0BA046AC181CA033004B2827 /* LZDivision.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LZDivision.h; path = Operators/LZDivision.h; sourceTree = "<group>"; };
 		0BA046AD181CA033004B2827 /* LZDivision.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LZDivision.m; path = Operators/LZDivision.m; sourceTree = "<group>"; };
 		0BA046B0181CA8EB004B2827 /* LZOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LZOperation.h; path = Operators/LZOperation.h; sourceTree = "<group>"; };
-		0BA046B4181CABAA004B2827 /* NSObject+Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+Singleton.h"; path = "Operators/NSObject+Singleton.h"; sourceTree = "<group>"; };
-		0BA046B5181CABAA004B2827 /* NSObject+Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+Singleton.m"; path = "Operators/NSObject+Singleton.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,8 +169,6 @@
 		0BA046AF181CA03C004B2827 /* Operators */ = {
 			isa = PBXGroup;
 			children = (
-				0BA046B4181CABAA004B2827 /* NSObject+Singleton.h */,
-				0BA046B5181CABAA004B2827 /* NSObject+Singleton.m */,
 				0BA046B0181CA8EB004B2827 /* LZOperation.h */,
 				0BA046A3181C9FF4004B2827 /* LZSum.h */,
 				0BA046A4181C9FF4004B2827 /* LZSum.m */,
@@ -290,7 +285,6 @@
 				0BA046A8181CA018004B2827 /* LZSubtraction.m in Sources */,
 				0BA046A5181C9FF4004B2827 /* LZSum.m in Sources */,
 				0BA046AE181CA033004B2827 /* LZDivision.m in Sources */,
-				0BA046B6181CABAA004B2827 /* NSObject+Singleton.m in Sources */,
 				0BA04685181C79BC004B2827 /* LZViewController.m in Sources */,
 				0BA0467B181C79BC004B2827 /* main.m in Sources */,
 			);
@@ -501,6 +495,7 @@
 				0BA0469F181C79BC004B2827 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0BA046A0181C79BC004B2827 /* Build configuration list for PBXNativeTarget "BasicCalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +504,7 @@
 				0BA046A2181C79BC004B2827 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

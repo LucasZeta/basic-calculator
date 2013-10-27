@@ -26,7 +26,7 @@
 
 - (IBAction)tapNumber:(id)sender;
 - (IBAction)tapDecimalSeparator:(id)sender;
-- (IBAction)clearScreen:(id)sender;
+- (IBAction)clearCalculator:(id)sender;
 - (IBAction)divide:(id)sender;
 - (IBAction)multiplicate:(id)sender;
 - (IBAction)subtract:(id)sender;

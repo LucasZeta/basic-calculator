@@ -195,7 +195,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="clearScreen:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QzG-F5-emj"/>
+                                    <action selector="clearCalculator:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7sO-ol-YvS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ded-lq-mlm">

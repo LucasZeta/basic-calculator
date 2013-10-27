@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import "LZOperation.h"
-#import "NSObject+Singleton.h"
 
 @interface LZDivision : NSObject <LZOperation>
 

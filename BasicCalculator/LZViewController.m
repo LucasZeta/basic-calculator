@@ -24,6 +24,26 @@
     [self putButtonNumberOnScreen];
 }
 
+- (IBAction)divide:(id)sender
+{
+    operation = [LZDivision sharedInstance];
+}
+
+- (IBAction)multiplicate:(id)sender
+{
+    operation = [LZMultiplication sharedInstance];
+}
+
+- (IBAction)subtract:(id)sender
+{
+    operation = [LZSubtraction sharedInstance];
+}
+
+- (IBAction)sum:(id)sender
+{
+    operation = [LZSum sharedInstance];
+}
+
 - (void)putButtonNumberOnScreen
 {
     resultScreen.text = [NSString stringWithFormat:@"%i", numberTapped];

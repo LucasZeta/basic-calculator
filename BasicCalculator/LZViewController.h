@@ -7,6 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LZOperation.h"
+#import "LZSum.h"
+#import "LZSubtraction.h"
+#import "LZMultiplication.h"
+#import "LZDivision.h"
 
 @interface LZViewController : UIViewController
 {
@@ -14,8 +19,14 @@
 
     int numberTapped;
     float total;
+
+    id<LZOperation> operation;
 }
 
 - (IBAction)tapNumber:(id)sender;
+- (IBAction)divide:(id)sender;
+- (IBAction)multiplicate:(id)sender;
+- (IBAction)subtract:(id)sender;
+- (IBAction)sum:(id)sender;
 
 @end

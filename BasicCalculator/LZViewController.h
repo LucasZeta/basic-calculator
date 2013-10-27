@@ -17,8 +17,8 @@
 {
     IBOutlet UILabel *resultScreen;
 
-    int numberTapped;
-    float total;
+    double numberTapped;
+    double total;
 
     id<LZOperation> operation;
 }

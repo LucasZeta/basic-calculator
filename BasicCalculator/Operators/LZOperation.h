@@ -10,6 +10,6 @@
 
 @protocol LZOperation <NSObject>
 
-- (void)doTheMathWith(int):and;
+- (double)doTheMathWith:(double)number1 and:(double)number2;
 
 @end

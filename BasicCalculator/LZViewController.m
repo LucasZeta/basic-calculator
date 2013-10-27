@@ -19,34 +19,56 @@
     UIButton *button = (UIButton *)sender;
 
     numberTapped *= 10;
-    numberTapped += [button.titleLabel.text intValue];
+    numberTapped += [button.titleLabel.text doubleValue];
 
     [self putButtonNumberOnScreen];
 }
 
 - (IBAction)divide:(id)sender
 {
+    [self calculate];
     operation = [LZDivision sharedInstance];
 }
 
 - (IBAction)multiplicate:(id)sender
 {
+    [self calculate];
     operation = [LZMultiplication sharedInstance];
 }
 
 - (IBAction)subtract:(id)sender
 {
+    [self calculate];
     operation = [LZSubtraction sharedInstance];
 }
 
 - (IBAction)sum:(id)sender
 {
+    [self calculate];
     operation = [LZSum sharedInstance];
+}
+
+- (void)calculate
+{
+    if (operation) {
+        total = [operation doTheMathWith:total and:numberTapped];
+
+        [self updateResultScreen];
+    } else {
+        total = numberTapped;
+    }
+
+    numberTapped = 0;
+}
+
+- (void)updateResultScreen
+{
+    resultScreen.text = [NSString stringWithFormat:@"%f", total];
 }
 
 - (void)putButtonNumberOnScreen
 {
-    resultScreen.text = [NSString stringWithFormat:@"%i", numberTapped];
+    resultScreen.text = [NSString stringWithFormat:@"%f", numberTapped];
 }
 
 - (void)viewDidLoad

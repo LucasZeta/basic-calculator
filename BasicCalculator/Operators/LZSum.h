@@ -12,6 +12,6 @@
 
 @interface LZSum : NSObject <LZOperation>
 
-- (void)doTheMath;
+- (double)doTheMathWith:(double)number1 and:(double)number2;
 
 @end

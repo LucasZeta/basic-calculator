@@ -9,5 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface LZViewController : UIViewController
+{
+    IBOutlet UILabel *resultScreen;
+
+    int numberTapped;
+    float total;
+}
+
+- (IBAction)tapNumber:(id)sender;
 
 @end

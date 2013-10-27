@@ -17,16 +17,40 @@
 - (IBAction)tapNumber:(id)sender
 {
     UIButton *button = (UIButton *)sender;
+    int intValue = [button.titleLabel.text intValue];
 
-    numberTapped *= 10;
-    numberTapped += [button.titleLabel.text intValue];
+    if (decimalPlaces > 0) {
+        [self insertNumberAtFractionalPart:intValue];
+    } else {
+        [self insertNumberAtIntegerPart:intValue];
+    }
 
     [self putButtonNumberOnScreen];
 }
 
+- (IBAction)tapDecimalSeparator:(id)sender
+{
+    if (decimalPlaces == 0) {
+        decimalPlaces = 1;
+    }
+}
+
 - (void)putButtonNumberOnScreen
 {
-    resultScreen.text = [NSString stringWithFormat:@"%i", numberTapped];
+    int precision = (decimalPlaces > 0) ? decimalPlaces - 1 : 0;
+    resultScreen.text = [NSString stringWithFormat:@"%.*f", precision, numberTapped];
+}
+
+- (void)insertNumberAtIntegerPart:(int)number
+{
+    numberTapped *= 10;
+    numberTapped += number;
+}
+
+- (void)insertNumberAtFractionalPart:(int)number
+{
+    numberTapped += number / pow(10.0f, decimalPlaces);
+    decimalPlaces++;
 }
 
 - (void)viewDidLoad

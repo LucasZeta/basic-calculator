@@ -12,10 +12,12 @@
 {
     IBOutlet UILabel *resultScreen;
 
-    int numberTapped;
-    float total;
+    double numberTapped;
+    double total;
+    int decimalPlaces;
 }
 
 - (IBAction)tapNumber:(id)sender;
+- (IBAction)tapDecimalSeparator:(id)sender;
 
 @end

@@ -14,18 +14,13 @@
 
 @implementation LZViewController
 
-- (IBAction)tapNumber:(id)sender
+- (IBAction)tapKey:(id)sender
 {
     UIButton *button = (UIButton *)sender;
     
     [numberTapped appendString:button.titleLabel.text];
 
     [self updateResultScreen:numberTapped];
-}
-
-- (IBAction)tapDecimalSeparator:(id)sender
-{
-    [self tapNumber:sender];
 }
 
 - (IBAction)clearCalculator:(id)sender

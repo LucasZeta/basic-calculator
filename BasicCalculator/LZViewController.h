@@ -23,8 +23,7 @@
     id<LZOperation> operation;
 }
 
-- (IBAction)tapNumber:(id)sender;
-- (IBAction)tapDecimalSeparator:(id)sender;
+- (IBAction)tapKey:(id)sender;
 - (IBAction)clearCalculator:(id)sender;
 - (IBAction)divide:(id)sender;
 - (IBAction)multiplicate:(id)sender;

@@ -30,7 +30,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="tapNumber:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nrF-Kr-qlG"/>
+                                    <action selector="tapKey:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3Mi-fG-P0u"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L60-AA-OJq">
@@ -41,7 +41,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="tapNumber:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Dqe-aq-ccW"/>
+                                    <action selector="tapKey:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Lpw-Ra-b6i"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gsf-ie-aco">
@@ -52,7 +52,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="tapNumber:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hd4-Hq-7bh"/>
+                                    <action selector="tapKey:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="SRD-D9-OuB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdb-iQ-cD1">
@@ -85,7 +85,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="tapNumber:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nIL-ml-Uan"/>
+                                    <action selector="tapKey:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="awL-0l-BAa"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1oP-TK-WZU">
@@ -96,7 +96,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="tapNumber:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="FSE-jm-13F"/>
+                                    <action selector="tapKey:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="qzt-Oi-XP5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFe-mZ-t5H">
@@ -107,7 +107,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="tapNumber:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="EEc-Ks-f4G"/>
+                                    <action selector="tapKey:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="iZd-Go-TLY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g76-4X-6Kz">
@@ -129,7 +129,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="tapNumber:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="92p-Oh-Xtk"/>
+                                    <action selector="tapKey:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="iLK-uw-LB9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9wT-K3-eaY">
@@ -140,7 +140,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="tapNumber:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6V5-UU-12a"/>
+                                    <action selector="tapKey:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="qCy-ML-sB9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lRN-0Q-eXy">
@@ -151,7 +151,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="tapNumber:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Z49-TK-f22"/>
+                                    <action selector="tapKey:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="05Z-Yr-8fD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJi-SO-2c2">
@@ -173,7 +173,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="tapNumber:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Hrf-od-h86"/>
+                                    <action selector="tapKey:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="jDf-Qe-7hJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1En-Sd-Ksj">
@@ -184,7 +184,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="tapDecimalSeparator:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vnu-wX-plf"/>
+                                    <action selector="tapKey:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="tyq-e9-Uwt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uOf-tQ-AcS">

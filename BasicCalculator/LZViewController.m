@@ -17,28 +17,20 @@
 - (IBAction)tapNumber:(id)sender
 {
     UIButton *button = (UIButton *)sender;
-    int intValue = [button.titleLabel.text intValue];
+    
+    [numberTapped appendString:button.titleLabel.text];
 
-    if (decimalPlaces > 0) {
-        [self insertNumberAtFractionalPart:intValue];
-    } else {
-        [self insertNumberAtIntegerPart:intValue];
-    }
-
-    [self updateResultScreen];
+    [self updateResultScreen:numberTapped];
 }
 
 - (IBAction)tapDecimalSeparator:(id)sender
 {
-    if (decimalPlaces == 0) {
-        decimalPlaces = 1;
-    }
+    [self tapNumber:sender];
 }
 
 - (IBAction)clearCalculator:(id)sender
 {
-    decimalPlaces = 0;
-    numberTapped = 0;
+    numberTapped = [NSMutableString stringWithString:@""];
     total = 0;
 
     operation = nil;
@@ -48,25 +40,12 @@
 
 - (void)updateResultScreen
 {
-    [self updateResultScreen:numberTapped];
+    [self updateResultScreen:[NSString stringWithFormat:@"%f", total]];
 }
 
-- (void)updateResultScreen:(double)number
+- (void)updateResultScreen:(NSString *)text
 {
-    int precision = (decimalPlaces > 0) ? decimalPlaces - 1 : 0;
-    resultScreen.text = [NSString stringWithFormat:@"%.*f", precision, number];
-}
-
-- (void)insertNumberAtIntegerPart:(int)number
-{
-    numberTapped *= 10;
-    numberTapped += number;
-}
-
-- (void)insertNumberAtFractionalPart:(int)number
-{
-    numberTapped += number / pow(10.0f, decimalPlaces);
-    decimalPlaces++;
+    resultScreen.text = text;
 }
 
 - (IBAction)divide:(id)sender
@@ -95,21 +74,26 @@
 
 - (void)calculate
 {
-    if (operation) {
-        total = [operation doTheMathWith:total and:numberTapped];
+    float number = [numberTapped floatValue];
 
-        [self updateResultScreen:total];
+    if (operation) {
+        total = [operation doTheMathWith:total and:number];
+
+        [self updateResultScreen];
     } else {
-        total = numberTapped;
+        total = number;
     }
 
-    numberTapped = 0;
+    numberTapped = [NSMutableString stringWithString:@""];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    total = 0;
+    numberTapped = [NSMutableString stringWithString:@""];
 }
 
 - (void)didReceiveMemoryWarning

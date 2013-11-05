@@ -17,9 +17,8 @@
 {
     IBOutlet UILabel *resultScreen;
 
-    double numberTapped;
+    NSMutableString *numberTapped;
     double total;
-    int decimalPlaces;
 
     id<LZOperation> operation;
 }

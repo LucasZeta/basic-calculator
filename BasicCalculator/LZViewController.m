@@ -35,7 +35,7 @@
 
 - (void)updateResultScreen
 {
-    [self updateResultScreen:[NSString stringWithFormat:@"%f", total]];
+    [self updateResultScreen:[NSString stringWithFormat:@"%g", total]];
 }
 
 - (void)updateResultScreen:(NSString *)text
